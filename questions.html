@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=League+Spartan:wght@300;400&family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <title>PR2</title>
+  </head>
+  <body>
+    <div class="background">
+      <main class="main container qa">
+        <article class="article qa">
+          <div class="qa">
+            <h2 class="header-article">Контрольні питання</h2>
+            <p>1 Що представляє собою CSS?</p>
+            <p>
+              CSS описує візуальний стиль і представлення вмісту що написан на
+              HTML
+            </p>
+            <p>2 Як використовується CSS?</p>
+            <p>
+              CSS складається з незліченних властивостей/properties, які
+              розробники використовують для форматування, як: властивості
+              шрифту, тексту, інтервалів, макета тощо
+            </p>
+
+            <p>3 У яких випадках який спосіб застосування CSS кращий?</p>
+            <p>
+              Завжди найкращий спосіб – створення доку style.css. Коли документ
+              дуже малий, можна застосувати style в хеаді html
+            </p>
+
+            <p>4 Який синтаксис визначення стилю?</p>
+            <p>font-style: normal;</p>
+            <p>5 В чому полягає ідея спадкування форматів у документі?</p>
+            <p>
+              Що деякі властивості – як колір тексту, передаються з
+              батьківського елементу до дитя-елементу(child element)
+            </p>
+
+            <p>6 Що означає клас і як його визначити?</p>
+            <p>
+              &lt;div class="”div”"&gt;&lt;/div&gt; дає можливість надати назву
+              боксу, щоб буле зручніше обирати бокси орієнтуватись в CSS файлі
+            </p>
+            <p>7. Для чого використовується id в тегах та стилях?</p>
+            <p>
+              Я використовую тільки class, щоб увесь документ був в одному
+              форматі. Але його відміна від класу в пріоритетності – він по
+              пріоритету вище, тому в саме його властивості будуть
+              застосовуватись у випадку додаткової стилізації одного боксу з
+              класами й псевдо класами. Вище його тільки властивості вписані в
+              тег й !important
+            </p>
+
+            <p>8. Що таке селектор? Які селектори ви знаєте?</p>
+            <p>
+              Це частина правила CSS, в якій указують що саме стилізувати.
+              Можуть бути просто бокси як header, класи, псевдо-класи,
+              псевдо-елементи, id
+            </p>
+
+            <p>9. Що означає селектор * (зірочка)?</p>
+            <p>
+              Він вибирає абсолютно всі елементи в документі, але й має
+              найнижчий пріоритет. Тому підходить до застосування універсальних
+              правил, як обнулування дефолтних марджінов й паддінгів.
+            </p>
+
+            <p>10. Що таке зовнішня таблиця стилів?</p>
+            <p>External Style Sheet — це текстовий файл із розширенням .css</p>
+            <p>11. З яких елементів складається стиль?</p>
+            <p><img src="img/css rule.png" class="img" /></p>
+            <p>12. Як записують коментар в CSS?</p>
+            <p>/* коментар */</p>
+          </div>
+        </article>
+        <footer class="footer">
+          <p>
+            <strong>Copyright &copy; 2022 by Makarov Danil.</strong>
+          </p>
+        </footer>
+      </main>
+      <nav class="nav container">
+        <a href="index.html"
+          ><ion-icon class="icon" name="home-outline"></ion-icon
+        ></a>
+        <div class="nav-box">
+          <a class="nav-link btn" href="words/01.html">Header</a>
+        </div>
+        <div class="nav-box">
+          <a class="nav-link btn" href="words/02.html">Nav</a>
+        </div>
+        <div class="nav-box">
+          <a class="nav-link btn" href="words/03.html">Section</a>
+        </div>
+        <div class="nav-box">
+          <a class="nav-link btn" href="words/04.html">Article</a>
+        </div>
+
+        <div class="nav-box">
+          <a class="nav-link btn" href="words/05.html">Aside</a>
+        </div>
+        <div class="nav-box">
+          <a class="nav-link btn" href="words/06.html">Footer</a>
+        </div>
+      </nav>
+    </div>
+  </body>
+</html>

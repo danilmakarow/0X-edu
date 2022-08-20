@@ -24,6 +24,7 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+  font-style: normal;
 }
 
 .background {
@@ -100,16 +101,16 @@ body {
 ARTICLE SECTION
 //////////////////////////////////////////// */
 .main {
+  position: relative;
   width: 55rem;
   min-height: 42rem;
   padding: 3rem 2rem;
-  position: relative;
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
 }
 
 .border {
   width: 40%;
-  border: 1px solid #555;
+  border: 1px solid #ff92f4;
   margin: auto;
   margin-bottom: 3rem;
 }
@@ -126,6 +127,47 @@ ARTICLE SECTION
   float: left;
   position: absolute;
   bottom: 2rem;
+}
+
+.article-btn:link,
+.article-btn:visited {
+  /* margin: 2rem auto 0px auto; */
+  margin-top: 2rem;
+  margin-left: 50%;
+  transform: translate(-50%, 0);
+  width: max-content;
+
+  font-size: 2rem;
+  font-weight: 600;
+  /* good for buttons */
+  background-color: #fff;
+  color: #555;
+  text-decoration: none;
+  box-shadow: 0px 2px 5px #7867df, 0px -2px 5px #7867df;
+
+  display: inline-block;
+  padding: 1.3rem 2.6rem;
+  border-radius: 2rem;
+
+  transition: 0.5s;
+}
+
+.article-btn:hover,
+.article-btn:active {
+  /* margin-left: 50%;
+  transform: translate(-50%, 0); */
+
+  background: linear-gradient(
+    120deg,
+    #7867df 0.11%,
+    #d5b6ff 28.08%,
+    #ff92f4 49.55%,
+    #ffb4fa 66.03%,
+    #ffdafc 95.99%
+  );
+  color: #fff;
+  box-shadow: none;
+  /* transform: scale(1.1); */
 }
 
 /* ////////////////////////////////////////////
@@ -176,12 +218,12 @@ NAV SECTION
     0 0 40px rgba(0, 0, 0, 0.1) inset; */
 
   box-shadow: 0px 2px 5px #7867df, 0px -2px 5px #7867df;
-  background-color: #ffffff;
-  transform: scale(1.05);
+  background-color: #fff;
+  transform: scale(1.07);
 }
 
 .nav-box-open a {
-  color: #ff92f4 !important;
+  color: #999 !important;
   font-size: 2.2rem;
 }
 
@@ -219,8 +261,7 @@ WORDS SECTION
 
 .text-meaning {
   font-size: 2rem;
-    line-height: 1.4;
-
+  line-height: 1.4;
 }
 
 .img-box {
@@ -231,4 +272,18 @@ WORDS SECTION
 .img {
   width: 100%;
   border-radius: 10px;
+}
+
+/* ///////////////////////////////////////
+Q&A SECTION
+/////////////////////////////////////////// */
+
+.qa p:nth-child(even) {
+  font-weight: 600;
+  margin: 3.5rem 0 1.5rem 0;
+}
+
+.article .qa {
+  overflow: scroll;
+  height: 33rem;
 }
